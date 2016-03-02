@@ -1,0 +1,34 @@
+<!--><!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+<!--><web-app> <-->
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.tsystems.webapp.servlets.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>TrainServlet</servlet-name>
+    <servlet-class>com.tsystems.webapp.servlets.TrainServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>TrainServlet</servlet-name>
+    <url-pattern>/TrainServlet.do</url-pattern>
+  </servlet-mapping>
+
+</web-app>

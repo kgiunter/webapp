@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - school@localhost driver - DBTrain@localhost" uuid="3a838cb3-3ff8-4fc1-899f-935cb1b75e69">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>dbtrain.*</schema-pattern>
+      <default-schemas>dbtrain.*</default-schemas>
+    </data-source>
+  </component>
+</project>
