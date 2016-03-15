@@ -34,6 +34,7 @@
                     href="TrainServlet.do?action=edit&id=<c:out value="${train.id }"/>">Update</a></td>
             <td><a
                     href="TrainServlet.do?action=delete&id=<c:out value="${train.id }"/>">Delete</a></td>
+
         </tr>
     </c:forEach>
     </tbody>
@@ -41,5 +42,7 @@
 <p>
     <a href="TrainServlet.do?action=insert">Add Train</a>
 </p>
+<br>
+<a href="adminPage.jsp">Return to admin page</a>
 </body>
 </html>

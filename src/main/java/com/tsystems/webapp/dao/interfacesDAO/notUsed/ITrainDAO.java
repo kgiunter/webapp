@@ -3,6 +3,8 @@ package com.tsystems.webapp.dao.interfacesDAO.notUsed;
 
 import com.tsystems.webapp.dao.interfacesDAO.notUsed.IDAO;
 
-public interface ITrainDAO<E,K> extends IDAO<E,K> {
+import java.io.Serializable;
+
+public interface ITrainDAO<E,K extends Serializable> extends IDAO<E,K> {
 
 }

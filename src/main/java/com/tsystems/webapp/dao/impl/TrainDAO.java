@@ -2,14 +2,13 @@ package com.tsystems.webapp.dao.impl;
 
 
 import com.tsystems.webapp.dao.interfacesDAO.notUsed.ITrainDAO;
-import com.tsystems.webapp.model.TrainModel;
+import com.tsystems.webapp.entity.TrainEntity;
 
-import javax.persistence.EntityManager;
 
-public class TrainDAO extends DAO<TrainModel, Integer> implements ITrainDAO<TrainModel, Integer>
+public class TrainDAO extends DAO<TrainEntity, Integer> implements ITrainDAO<TrainEntity, Integer>
 {
-    public TrainDAO(EntityManager em)
+    public TrainDAO()
     {
-        super(em, TrainModel.class);
+        super();
     }
 }

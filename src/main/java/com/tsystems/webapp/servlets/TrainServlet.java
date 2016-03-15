@@ -23,6 +23,7 @@ public class TrainServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     public static final String lIST_TRAINS = "/listTrains.jsp";
     public static final String INSERT_OR_EDIT = "/train.jsp";
+    public static final String INSERT = "/trainAdd.jsp";
 
    // EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("MyEM");
   //  EntityManager entitymanager = emfactory.createEntityManager( );
@@ -50,8 +51,9 @@ public class TrainServlet extends HttpServlet {
             request.setAttribute("train", train);
         }
         else if( action.equalsIgnoreCase( "insert" ) ) {
-            forward = INSERT_OR_EDIT;
+            forward = INSERT;
         }
+
         else {
             forward = lIST_TRAINS;
             request.setAttribute("trains", dao.getAllTrains() );
@@ -73,7 +75,11 @@ public class TrainServlet extends HttpServlet {
         String trainId = request.getParameter("id");
 
         if( trainId == null || trainId.isEmpty() )
+        {
+            train.setId(Integer.parseInt(request.getParameter("idAdd")));
             dao.addTrain(train);
+        }
+
         else {
             train.setId( Integer.parseInt(trainId) );
             dao.updateTrain(train);

@@ -10,6 +10,37 @@ import java.util.Date;
 public class ScheduleModel {
     private int id;
     private int station_id;
+    private String stationName;
+    private String arrivalStation;
+    private int trainNumber;
+
+    public void setTrainNumber(int trainNumber) {
+        this.trainNumber = trainNumber;
+    }
+
+    public int getTrainNumber() {
+
+        return trainNumber;
+    }
+
+    public void setArrivalStation(String arrivalStation) {
+        this.arrivalStation = arrivalStation;
+    }
+
+    public String getArrivalStation() {
+
+        return arrivalStation;
+    }
+
+    public void setStationName(String stationName) {
+        this.stationName = stationName;
+    }
+
+    public String getStationName() {
+
+        return stationName;
+    }
+
     private int train_id;
     private Date departureDate;
     private Date arrivalDate;

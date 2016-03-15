@@ -20,15 +20,14 @@ public class StationDAOImpl implements IntStationDAO {
     }
     @Override
     public void addStation(StationModel station) {
+
         try {
-            String query = "insert into station (id, stationName, placesCount, arrivalStation) values (?,?,?,?)";
+            String query = "insert into station (id, stationName) values (?,?)";
             PreparedStatement preparedStatement = (PreparedStatement) conn.prepareStatement( query );
-            preparedStatement.setObject( 1, null);
-          //  preparedStatement.setInt( 2, train.getTrainNumber() );
-         //   preparedStatement.setInt( 3, train.getPlacesCount() );
-         //   preparedStatement.setString( 4, train.getArrivalStation() );
-         //   preparedStatement.executeUpdate();
-         //   preparedStatement.close();
+            preparedStatement.setInt( 1, station.getId());
+            preparedStatement.setString( 2, station.getStationName() );
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -47,57 +46,51 @@ public class StationDAOImpl implements IntStationDAO {
     }
     @Override
     public void updateStation( StationModel station ) {
-    //    try {
-          //  String query = "update train set id=?, trainNumber=?, placesCount=?, arrivalStation=? where id=?";
-          //  PreparedStatement preparedStatement = (PreparedStatement) conn.prepareStatement( query );
-          //  preparedStatement.setInt( 1, train.getId() );
-          //  preparedStatement.setInt( 2, train.getTrainNumber() );
-          //  preparedStatement.setInt( 3, train.getPlacesCount() );
-           // preparedStatement.setString( 4, train.getArrivalStation() );
-          //  preparedStatement.setInt(5, train.getId());
+        try {
+            String query = "update station set id=?, stationName=? where id=?";
+            PreparedStatement preparedStatement = (PreparedStatement) conn.prepareStatement( query );
+            preparedStatement.setInt( 1, station.getId() );
+            preparedStatement.setString( 2, station.getStationName() );
+            preparedStatement.setInt(3, station.getId());
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
 
-          //  preparedStatement.executeUpdate();
-         //   preparedStatement.close();
-      //  } catch (SQLException e) {
-       //     e.printStackTrace();
-      //  }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
+
     @Override
     public List<StationModel> getAllStations() {
-        List<StationModel> trains = new ArrayList<StationModel>();
+        List<StationModel> stations = new ArrayList<StationModel>();
         try {
             Statement statement = (Statement) conn.createStatement();
             ResultSet resultSet = statement.executeQuery( "select * from station" );
             while( resultSet.next() ) {
                 StationModel station = new StationModel();
-          //      train.setId( resultSet.getInt( "id" ) );
-           //     train.setTrainNumber( resultSet.getInt( "trainNumber" ) );
-           //     train.setPlacesCount( resultSet.getInt( "placesCount" ) );
-           //     train.setArrivalStation( resultSet.getString( "arrivalStation" ) );
-
-           //     trains.add(train);
+                station.setId( resultSet.getInt( "id" ) );
+                station.setStationName( resultSet.getString( "stationName" ) );
+                stations.add(station);
             }
             resultSet.close();
             statement.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return trains;
+        return stations;
     }
     @Override
     public StationModel getStationById(int id) {
         StationModel station = new StationModel();
         try {
-            String query = "select * from train where id=?";
+            String query = "select * from station where id=?";
             PreparedStatement preparedStatement = (PreparedStatement) conn.prepareStatement( query );
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            while( resultSet.next() ) {
-           //     train.setId( resultSet.getInt( "id" ) );
-           //     train.setTrainNumber( resultSet.getInt( "trainNumber" ) );
-           //     train.setPlacesCount( resultSet.getInt( "placesCount" ) );
-           //     train.setArrivalStation( resultSet.getString( "arrivalStation" ) );
-
+            while( resultSet.next() )
+            {
+                station.setId( resultSet.getInt( "id" ) );
+                station.setStationName( resultSet.getString( "stationName" ) );
             }
             resultSet.close();
             preparedStatement.close();

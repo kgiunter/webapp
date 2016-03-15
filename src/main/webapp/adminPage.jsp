@@ -6,7 +6,7 @@
 
 <style>
     body {
-        background-image: url(http://www.clipartlord.com/wp-content/uploads/2014/05/train19.png);
+        background-image: url(http://images.designtrends.com/wp-content/uploads/2016/02/23103507/Train-Structure-Mountains-Lake-Movement.jpg);
     }
 </style>
 

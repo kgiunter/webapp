@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="520931406">
+  <component name="DataSourceManagerImpl" format="xml" hash="1897041507">
     <data-source source="LOCAL" name="MySQL - school@localhost driver - DBTrain@localhost" uuid="3a838cb3-3ff8-4fc1-899f-935cb1b75e69">
       <driver-ref>1431e2df-af29-42ad-895e-bda6913824b1</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/DBTrain</jdbc-url>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="MySQL - school@localhost driver - test@localhost" uuid="f31b0097-88bd-4b16-99dd-3aa1cd121516">
+      <driver-ref>1431e2df-af29-42ad-895e-bda6913824b1</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/test</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />

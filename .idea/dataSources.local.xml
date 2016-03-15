@@ -7,5 +7,11 @@
       <schema-pattern>dbtrain.*</schema-pattern>
       <default-schemas>dbtrain.*</default-schemas>
     </data-source>
+    <data-source name="MySQL - school@localhost driver - test@localhost" uuid="f31b0097-88bd-4b16-99dd-3aa1cd121516">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>test.*</schema-pattern>
+      <default-schemas>test.*</default-schemas>
+    </data-source>
   </component>
 </project>

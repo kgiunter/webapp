@@ -1,6 +1,5 @@
 package com.tsystems.webapp.dao;
 
-
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
 import com.mysql.jdbc.Statement;
@@ -12,7 +11,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class TrainDAOImpl implements IntTrainDAO{
     private Connection conn;
@@ -20,12 +18,15 @@ public class TrainDAOImpl implements IntTrainDAO{
     public TrainDAOImpl() throws SQLException {
         conn = (Connection)DBUtil.getConnection();
     }
+
+    // ADD TRAIN
+
     @Override
     public void addTrain( TrainModel train ) {
         try {
             String query = "insert into train (id, trainNumber, placesCount, arrivalStation) values (?,?,?,?)";
             PreparedStatement preparedStatement = (PreparedStatement) conn.prepareStatement( query );
-            preparedStatement.setObject( 1, null);
+            preparedStatement.setObject( 1, train.getId());
             preparedStatement.setInt( 2, train.getTrainNumber() );
             preparedStatement.setInt( 3, train.getPlacesCount() );
             preparedStatement.setString( 4, train.getArrivalStation() );
@@ -35,6 +36,9 @@ public class TrainDAOImpl implements IntTrainDAO{
             e.printStackTrace();
         }
     }
+
+    //  DELETE TRAIN
+
     @Override
     public void deleteTrain( int id ) {
         try {
@@ -47,6 +51,9 @@ public class TrainDAOImpl implements IntTrainDAO{
             e.printStackTrace();
         }
     }
+
+    //  UPDATE TRAIN
+
     @Override
     public void updateTrain( TrainModel train ) {
         try {
@@ -64,6 +71,9 @@ public class TrainDAOImpl implements IntTrainDAO{
             e.printStackTrace();
         }
     }
+
+    // GET ALL TRAINS
+
     @Override
     public List<TrainModel> getAllTrains() {
         List<TrainModel> trains = new ArrayList<TrainModel>();
@@ -86,6 +96,9 @@ public class TrainDAOImpl implements IntTrainDAO{
         }
         return trains;
     }
+
+    // GET TRAIN BY ID
+
     @Override
     public TrainModel getTrainById(int id) {
         TrainModel train = new TrainModel();
@@ -108,5 +121,4 @@ public class TrainDAOImpl implements IntTrainDAO{
         }
         return train;
     }
-
 }

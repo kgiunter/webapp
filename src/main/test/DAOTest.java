@@ -7,9 +7,10 @@ import org.junit.Test;
 
 import java.sql.Connection;
 import java.util.List;
-/*
+
 public class DAOTest {
 
+    /*
     @Test
     public void testGetAll() throws Exception {
         DAOFactory daoFactory = new MySQLDAOFactory();
@@ -22,8 +23,7 @@ public class DAOTest {
         Assert.assertNotNull(list);
         Assert.assertTrue(list.size() > 0);
     }
-
+*/
 
 }
 
-*/

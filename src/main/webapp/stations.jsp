@@ -8,6 +8,6 @@
     <title>Welcome</title>
 </head>
 <body>
-<jsp:forward page="/TrainServlet?action=listTrains"></jsp:forward>
+<jsp:forward page="/StationServlet?action=listStations"></jsp:forward>
 </body>
 </html>
