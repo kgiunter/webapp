@@ -1,68 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb6fd8b-0514-41c9-90ef-33b9507f5a15" name="Default" comment="update: dao, trainEntity, Util, persistence, controller, service">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/Util.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/service/TrainService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/Util$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/Util$Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/Util.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/interfacesDAO/IDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/interfacesDAO/IPassengerDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/interfacesDAO/IScheduleDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/interfacesDAO/IStationDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/interfacesDAO/ITicketDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/interfacesDAO/ITrainDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/interfacesDAO/IUserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/service/TrainService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/Util$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/Util$Singleton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/Util.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/interfacesDAO/IDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/interfacesDAO/IPassengerDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/interfacesDAO/IScheduleDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/interfacesDAO/IStationDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/interfacesDAO/ITicketDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/interfacesDAO/ITrainDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/interfacesDAO/IUserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/service/TrainService.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/TrainDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/TrainDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/impl/DAO.class" afterPath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/impl/DAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/impl/TrainDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/dao/impl/TrainDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/model/ScheduleModel.class" afterPath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/model/ScheduleModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/servlets/TrainServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/tsystems/webapp/servlets/TrainServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/TrainDAOImpl.class" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/TrainDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/impl/DAO.class" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/impl/DAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/impl/TrainDAO.class" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/dao/impl/TrainDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/model/ScheduleModel.class" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/model/ScheduleModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/servlets/TrainServlet.class" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/classes/com/tsystems/webapp/servlets/TrainServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+    <list default="true" id="3bb6fd8b-0514-41c9-90ef-33b9507f5a15" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/StationDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/StationDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/TrainDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/TrainDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/impl/DAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/impl/DAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/impl/TrainDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/impl/TrainDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/interfacesDAO/notUsed/IDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/interfacesDAO/notUsed/IDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/interfacesDAO/notUsed/ITrainDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/dao/interfacesDAO/notUsed/ITrainDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/model/ScheduleModel.java" afterPath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/model/ScheduleModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/servlets/StationServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/servlets/StationServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/servlets/TrainServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/tsystems/webapp/servlets/TrainServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/DAOTest.java" afterPath="$PROJECT_DIR$/src/main/test/DAOTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/listTrains.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/listTrains.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/stations.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/stations.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/userPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/userPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp/adminPage.jsp" afterPath="$PROJECT_DIR$/target/webapp/adminPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp/listTrains.jsp" afterPath="$PROJECT_DIR$/target/webapp/listTrains.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp/stations.jsp" afterPath="$PROJECT_DIR$/target/webapp/stations.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp/userPage.jsp" afterPath="$PROJECT_DIR$/target/webapp/userPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp.iml" afterPath="$PROJECT_DIR$/webapp.iml" />
     </list>
     <ignored path="webapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1646,8 +1586,15 @@
       <workItem from="1457799775702" duration="3178000" />
       <workItem from="1457892040935" duration="617000" />
       <workItem from="1457893929498" duration="4556000" />
-      <workItem from="1457980470789" duration="11062000" />
+      <workItem from="1457980470789" duration="11233000" />
     </task>
+    <task id="LOCAL-00001" summary="update: dao, trainEntity, Util, persistence, controller, service">
+      <created>1458076081256</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1458076081256</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1668,7 +1615,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184063000" />
+    <option name="totallyTimeSpent" value="184234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
