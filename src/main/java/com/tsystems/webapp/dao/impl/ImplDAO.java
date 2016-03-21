@@ -15,16 +15,16 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
 
 
-@Repository
-public class DAO<E, K extends Serializable> implements IDAO<E, K> {
-    private static final Logger LOGGER = Logger.getLogger(DAO.class.getName());
+//@Repository
+public class ImplDAO<E, K extends Serializable> implements IDAO<E, K> {
+    private static final Logger LOGGER = Logger.getLogger(ImplDAO.class.getName());
 
     Class<E> entityClass;
 
     @PersistenceContext
     EntityManager em;
 
-    public DAO() {
+    public ImplDAO() {
         em = UtilWeb.getInstance().getEntityManager();
         ParameterizedType genericSuperclass = (ParameterizedType) getClass().getGenericSuperclass();
         this.entityClass = (Class<E>) genericSuperclass.getActualTypeArguments()[0];

@@ -1,6 +1,6 @@
 package com.tsystems.webapp.dao;
 
-import com.tsystems.webapp.dao.impl.TrainDAO;
+import com.tsystems.webapp.dao.impl.ImplTrainDAO;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -12,7 +12,7 @@ public interface DAOFactory {
     public  Connection getConnection() throws SQLException;
 
         /** Возвращает объект для управления персистентным состоянием объекта Train */
-       public TrainDAO getTrainDAO(Connection connection);
+       public ImplTrainDAO getTrainDAO(Connection connection);
     //...
 
     /** Фабрика объектов для работы с базой данных */

@@ -13,8 +13,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet("/StationServlet")
-public class StationServlet extends HttpServlet {
+
+//@WebServlet("/StationServlet")
+public class StationServlet {
+        /*
+        extends HttpServlet {
     private StationDAOImpl dao;
     private static final long serialVersionUID = 1L;
     public static final String lIST_STATIONS = "/listStations.jsp";
@@ -76,4 +79,5 @@ public class StationServlet extends HttpServlet {
         request.setAttribute("stations", dao.getAllStations());
         view.forward(request, response);
     }
+    */
 }

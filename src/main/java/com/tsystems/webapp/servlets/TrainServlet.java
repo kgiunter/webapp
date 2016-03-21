@@ -16,8 +16,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet("/TrainServlet")
-public class TrainServlet extends HttpServlet {
+//@WebServlet("/TrainServlet")
+public class TrainServlet {
+       /*
+        extends HttpServlet {
 
     private TrainDAOImpl dao;
     private static final long serialVersionUID = 1L;
@@ -88,4 +90,5 @@ public class TrainServlet extends HttpServlet {
         request.setAttribute("trains", dao.getAllTrains());
         view.forward(request, response);
     }
+    */
 }

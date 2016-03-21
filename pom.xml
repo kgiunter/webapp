@@ -19,6 +19,7 @@
     <maven.plugin.compiler.version>3.5.1</maven.plugin.compiler.version>
 
     <spring.version>4.2.5.RELEASE</spring.version>
+    <spring.data>1.9.4.RELEASE</spring.data>
   </properties>
 
 
@@ -49,6 +50,24 @@
       <artifactId>spring-orm</artifactId>
       <version>${spring.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>${spring.data}</version>
+    </dependency>
+
 
     <!--  DB  -->
 
@@ -104,6 +123,8 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+
+
 
   </dependencies>
 

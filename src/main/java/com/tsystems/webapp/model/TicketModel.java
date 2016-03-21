@@ -2,9 +2,10 @@ package com.tsystems.webapp.model;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "ticket", schema = "dbtrain")
+//@Entity
+//@Table(name = "ticket", schema = "dbtrain")
 public class TicketModel {
+    /*
 
     private int id;
     private int Schedule_id;
@@ -100,4 +101,5 @@ public class TicketModel {
         result = 31 * result + placeNumber;
         return result;
     }
+    */
 }

@@ -12,7 +12,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TrainDAOImpl implements IntTrainDAO{
+public class TrainDAOImpl {
+        /*
+
+
+        implements IntTrainDAO{
     private Connection conn;
 
     public TrainDAOImpl() throws SQLException {
@@ -121,4 +125,5 @@ public class TrainDAOImpl implements IntTrainDAO{
         }
         return train;
     }
+    */
 }

@@ -3,9 +3,10 @@ package com.tsystems.webapp.model;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "user", schema = "dbtrain")
+//@Entity
+//@Table(name = "user", schema = "dbtrain")
 public class UserModel {
+    /*
 
     private String login;
     private String firstName;
@@ -81,4 +82,5 @@ public class UserModel {
         result = 31 * result + (password != null ? password.hashCode() : 0);
         return result;
     }
+    */
 }

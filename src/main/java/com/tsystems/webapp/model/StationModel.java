@@ -3,9 +3,10 @@ package com.tsystems.webapp.model;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "station", schema = "dbtrain")
+//@Entity
+//@Table(name = "station", schema = "dbtrain")
 public class StationModel {
+    /*
     private int id;
     private String stationName;
 
@@ -55,4 +56,5 @@ public class StationModel {
         result = 31 * result + (stationName != null ? stationName.hashCode() : 0);
         return result;
     }
+    */
 }

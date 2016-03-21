@@ -12,7 +12,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StationDAOImpl implements IntStationDAO {
+
+public class StationDAOImpl {
+/*
+implements IntStationDAO {
+
     private Connection conn;
 
     public StationDAOImpl() throws SQLException {
@@ -99,6 +103,6 @@ public class StationDAOImpl implements IntStationDAO {
         }
         return station;
     }
-
+*/
 }
 

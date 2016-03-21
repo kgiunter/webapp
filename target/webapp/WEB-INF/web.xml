@@ -8,6 +8,10 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 
   <display-name>Archetype Created Web Application</display-name>
 
+
+
+
+  <!--
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>com.tsystems.webapp.servlets.LoginServlet</servlet-class>
@@ -67,5 +71,9 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
     <servlet-name>TripsServlet</servlet-name>
     <url-pattern>/TripsServlet.do</url-pattern>
   </servlet-mapping>
+
+<-->
+
+
 
 </web-app>

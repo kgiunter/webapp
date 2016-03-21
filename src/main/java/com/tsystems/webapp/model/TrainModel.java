@@ -3,9 +3,10 @@ package com.tsystems.webapp.model;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "train", schema = "dbtrain")
+//@Entity
+//@Table(name = "train", schema = "dbtrain")
 public class TrainModel {
+    /*
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -90,4 +91,5 @@ public class TrainModel {
         result = 31 * result + placesCount;
         return result;
     }
+    */
 }

@@ -4,10 +4,13 @@ package com.tsystems.webapp.model;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity
-@Table(name = "passenger", schema = "dbtrain")
+
+//@Entity
+//@Table(name = "passenger", schema = "dbtrain")
+
 public class PassengerModel {
-    private int id;
+    /*
+    private Integer id;
     private String lastName;
     private String firstName;
     private Date birthday;
@@ -85,4 +88,5 @@ public class PassengerModel {
         result = 31 * result + (birthday != null ? birthday.hashCode() : 0);
         return result;
     }
+    */
 }

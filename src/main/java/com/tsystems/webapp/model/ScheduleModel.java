@@ -5,9 +5,10 @@ import javax.persistence.*;
 import java.util.Date;
 
 
-@Entity
-@Table(name = "schedule", schema = "dbtrain")
+//@Entity
+//@Table(name = "schedule", schema = "dbtrain")
 public class ScheduleModel {
+    /*
     private int id;
     private int station_id;
     private String stationName;
@@ -152,5 +153,5 @@ public class ScheduleModel {
         result = 31 * result + status;
         return result;
     }
-
+*/
 }

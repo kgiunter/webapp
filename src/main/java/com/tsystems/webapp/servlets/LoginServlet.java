@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet{
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{
         PrintWriter out = response.getWriter();
-        String connectionURL = "jdbc:mysql://localhost:3306/DBTrain";
+        String connectionURL = "jdbc:mysql://localhost:3306/test";
         Connection connection=null;
         ResultSet rs;
         String userName=new String("");
@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet{
 // Получаем подключение к базе данных
             connection = DriverManager.getConnection(connectionURL, "root", "root");
 //Заносим данные в базу
-            String sql = "select login , password, userType from User";
+            String sql = "select login , password, role from User";
             Statement s = connection.createStatement();
             s.executeQuery (sql);
             rs = s.getResultSet();
