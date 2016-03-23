@@ -34,6 +34,8 @@
     <i>${message}</i><br/>
     <a href="${pageContext.request.contextPath}/train/create.html">Create a new train</a><br/>
     <a href="${pageContext.request.contextPath}/train/list.html">View all trains</a><br/>
+
+    <a href="adminPage.jsp">admin</a>
 </p>
 </body>
 </html>
