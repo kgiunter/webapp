@@ -11,16 +11,25 @@ public class TrainEntity {
     @Column(name="id")
     private Long id;
 
+    @Column(name = "numberTrain")
     private Integer numberTrain;
+
+    @Column(name = "nameTrain")
     private String nameTrain;
+
+    @Column(name = "countPlace")
     private Integer countPlace;
+
+    @Column(name="status")
+    private Integer status;
 
     public TrainEntity(){}
 
-    public TrainEntity(Integer numberTrain, String nameTrain, Integer countPlace) {
+    public TrainEntity(Integer numberTrain, String nameTrain, Integer countPlace, Integer status) {
         this.numberTrain = numberTrain;
         this.nameTrain = nameTrain;
         this.countPlace = countPlace;
+        this.status = status;
     }
 
     public Long getId() {
@@ -39,6 +48,10 @@ public class TrainEntity {
         return countPlace;
     }
 
+    public Integer getStatus() {
+        return status;
+    }
+
     public void setNumberTrain(Integer numberTrain) {
         this.numberTrain = numberTrain;
     }
@@ -55,6 +68,10 @@ public class TrainEntity {
         this.countPlace = countPlace;
     }
 
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -65,7 +82,8 @@ public class TrainEntity {
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (numberTrain != null ? !numberTrain.equals(that.numberTrain) : that.numberTrain != null) return false;
         if (nameTrain != null ? !nameTrain.equals(that.nameTrain) : that.nameTrain != null) return false;
-        return countPlace != null ? countPlace.equals(that.countPlace) : that.countPlace == null;
+        if (countPlace != null ? !countPlace.equals(that.countPlace) : that.countPlace != null) return false;
+        return status != null ? status.equals(that.status) : that.status == null;
 
     }
 
@@ -75,6 +93,7 @@ public class TrainEntity {
         result = 31 * result + (numberTrain != null ? numberTrain.hashCode() : 0);
         result = 31 * result + (nameTrain != null ? nameTrain.hashCode() : 0);
         result = 31 * result + (countPlace != null ? countPlace.hashCode() : 0);
+        result = 31 * result + (status != null ? status.hashCode() : 0);
         return result;
     }
 }
