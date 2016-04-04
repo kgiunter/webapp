@@ -43,6 +43,6 @@
     <a href="TrainServlet.do?action=insert">Add Train</a>
 </p>
 <br>
-<a href="adminPage.jsp">Return to admin page</a>
+<a href="admin.jsp">Return to admin page</a>
 </body>
 </html>

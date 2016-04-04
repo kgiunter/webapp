@@ -12,7 +12,7 @@ public interface IStationService
 
 
     public void add(StationEntity stationEntity);
-    public StationEntity getStationByName(String search);
+    public List<StationEntity> getStationByName(String search);
     public List<StationEntity> getAllStations();
     public void addEntity(String nameStation);
 }

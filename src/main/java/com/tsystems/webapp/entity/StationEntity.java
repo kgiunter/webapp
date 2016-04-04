@@ -1,6 +1,11 @@
 package com.tsystems.webapp.entity;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.*;
+
+
+// update
 
 @Entity
 @Table(name = "station", schema = "test")
@@ -10,12 +15,28 @@ public class StationEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name = "nameStation")
+
+    @NotEmpty
+    @Column(name = "nameStation", nullable = false)
     private String nameStation;
+
     @Column(name = "status")
     private Integer status;
 
+
+
+    //constructors
+
     public StationEntity(){}
+
+    public StationEntity(String nameStation, Integer status) {
+        this.nameStation = nameStation;
+        this.status = status;
+    }
+
+
+
+    // getters and setters
 
     public Long getId() {
         return id;
@@ -41,6 +62,9 @@ public class StationEntity {
         this.status = status;
     }
 
+
+    // equals and hashCode
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -61,4 +85,5 @@ public class StationEntity {
         result = 31 * result + (status != null ? status.hashCode() : 0);
         return result;
     }
+
 }

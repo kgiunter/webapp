@@ -10,6 +10,8 @@ import org.springframework.validation.Validator;
 @Component
 public class StationValidator implements Validator{
 
+
+
     @Override
     public boolean supports(Class<?> aClass) {
         return StationEntity.class.isAssignableFrom(aClass);
@@ -17,6 +19,10 @@ public class StationValidator implements Validator{
 
     @Override
     public void validate(Object o, Errors errors) {
+
+
+
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nameStation", "label.validate.nameStationEmpty");
     }
+
 }

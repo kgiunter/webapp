@@ -35,9 +35,8 @@
             </c:if>
 
             <div class="btn-group">
-                <button type="button" class="btn btn-default">left</button>
-                <button type="button" class="btn btn-default">middle</button>
-                <button type="button" class="btn btn-default">right</button>
+                <p><a class="btn btn-lg btn-primary btn-block" href="<c:url value="/pages/trip.jsp"/>" role="button">select a trip</a></p>
+                <p><a class="btn btn-lg btn-primary btn-block" href="<c:url value="/stationsU/list"/>" role="button">schedules</a></p>
             </div>
         </sec:authorize>
 

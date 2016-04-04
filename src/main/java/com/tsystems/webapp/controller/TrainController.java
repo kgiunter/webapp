@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -26,28 +28,35 @@ public class TrainController {
 	}
 
 	@RequestMapping(value = "/create", method = RequestMethod.POST)
-	public ModelAndView createNewTrain(@ModelAttribute TrainEntity train,
-									   BindingResult result,
+	public ModelAndView createNewTrain(@ModelAttribute @Valid TrainEntity train,
+									   BindingResult result, @RequestParam("numberTrain") Integer numberTrain,
+									   @RequestParam("nameTrain")String nameTrain,
+									   @RequestParam("arrivalStation")String arrivalStation,
+									   @RequestParam("countPlaces")Integer countPlaces,
 									   final RedirectAttributes redirectAttributes) {
 
 		if (result.hasErrors())
-			return new ModelAndView("train_create");
+			return new ModelAndView("train_create", "train", new TrainEntity()).addObject("message", "Field must not be empty!");
 
 		ModelAndView mav = new ModelAndView();
-		String message = "New train " + train.getNameTrain() + " was successfully created.";
 
-		trainService.add(train);
-		mav.setViewName("redirect:/index.html");
+		try {
+			trainService.addEntity(numberTrain, nameTrain, arrivalStation, countPlaces);
+		} catch (Exception e)
+		{
+			return new ModelAndView("train_create", "train", new TrainEntity()).addObject("message", "Please enter correct value!");
+		}
+		mav.setViewName("redirect:/train/list.html");
 
-		redirectAttributes.addFlashAttribute("message", message);
+
 		return mav;
 	}
 
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public ModelAndView trainListPage() {
-		ModelAndView mav = new ModelAndView("train_list");
+		ModelAndView mav = new ModelAndView("trains");
 		List<TrainEntity> trainList = trainService.getAllTrains();
-		mav.addObject("trainList", trainList);
+		mav.addObject("trains", trainList);
 		return mav;
 	}
 
@@ -87,6 +96,18 @@ public class TrainController {
 		String message = "The train " + "was successfully deleted.";
 
 		redirectAttributes.addFlashAttribute("message", message);
+		return mav;
+	}
+
+
+	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	public ModelAndView searchStation(@RequestParam("search") String search,
+									  final RedirectAttributes redirectAttributes)
+	{
+		ModelAndView mav = new ModelAndView("trains");
+		List<TrainEntity> trainList = new ArrayList<>();
+		trainList.addAll(trainService.getTrainByName(search));
+		mav.addObject("trains", trainList);
 		return mav;
 	}
 }

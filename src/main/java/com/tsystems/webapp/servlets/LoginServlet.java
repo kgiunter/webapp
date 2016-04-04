@@ -54,7 +54,7 @@ public class LoginServlet extends HttpServlet{
                     {
                         //out.println("User Authenticated - ADMIN");
 
-                        request.getRequestDispatcher("adminPage.jsp").forward(request, response);
+                        request.getRequestDispatcher("admin.jsp").forward(request, response);
 
                         count=1;
                         break;

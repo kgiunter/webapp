@@ -20,10 +20,26 @@
 
     <spring.version>4.2.5.RELEASE</spring.version>
     <spring.data>1.9.4.RELEASE</spring.data>
+    <spring.security>3.2.3.RELEASE</spring.security>
   </properties>
 
 
   <dependencies>
+
+
+    <!--  Validation -->
+
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>1.1.0.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>5.2.4.Final</version>
+    </dependency>
 
     <!--      Spring            -->
 
@@ -59,6 +75,12 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
       <version>${spring.version}</version>
     </dependency>
 
@@ -124,9 +146,36 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Spring security -->
 
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-web</artifactId>
+      <version>${spring.security}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-core</artifactId>
+      <version>${spring.security}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-config</artifactId>
+      <version>${spring.security}</version>
+    </dependency>
+
+    <!-- Spring Security JSP Taglib -->
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-taglibs</artifactId>
+      <version>${spring.security}</version>
+    </dependency>
 
   </dependencies>
+
+
 
 
   <build>

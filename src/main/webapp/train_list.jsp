@@ -22,7 +22,7 @@
             <td>${train.id}</td>
             <td>${train.numberTrain}</td>
             <td>${train.nameTrain}</td>
-            <td>${train.countPlace}</td>
+            <td>${train.countPlaces}</td>
             <td>
                 <a href="${pageContext.request.contextPath}/train/edit/${train.id}.html">Edit</a><br/>
                 <a href="${pageContext.request.contextPath}/train/delete/${train.id}.html">Delete</a><br/>

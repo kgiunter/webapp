@@ -1,7 +1,10 @@
 package com.tsystems.webapp.service.interfaces;
 
-/**
- * Created by Admin on 03.04.2016.
- */
+
+import com.tsystems.webapp.entity.PassengerEntity1;
+
+import java.util.List;
+
 public interface IPassengerService {
+    public List<PassengerEntity1> getListPassengers(Long id);
 }

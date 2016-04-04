@@ -56,6 +56,7 @@
         <form name='loginForm'
               action="<c:url value='/j_spring_security_check' />" method='POST'>
         <h2 class="form-signin-heading">Please sign in</h2>
+
             <span class="glyphicons glyphicons-user"><input type="text" class="form-control" name="username" placeholder="Login" required autofocus ></span>
 
         <input type="password" class="form-control" name="password" placeholder="Password" required >

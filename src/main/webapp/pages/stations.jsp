@@ -33,8 +33,8 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<c:url value="/station/list.html" />">Stations <span class="sr-only">(current)</span></a></li>
-                        <li><a href="<c:url value="/trains" />">Trains</a></li>
+                        <li class="active"><a href="<c:url value="/stations" />">Stations <span class="sr-only">(current)</span></a></li>
+                        <li><a href="<c:url value="/train" />">Trains</a></li>
                     </ul>
                     <form class="navbar-form navbar-left" role="search" action="${pageContext.request.contextPath}/station/search.html">
                         <div class="form-group">
@@ -43,7 +43,7 @@
                         <button type="submit" class="btn btn-default">Submit</button>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a>Help</a></li>
+                        <li><a href="#">Help</a></li>
                         <li><a href="<c:url value="/admin" />">Home</a></li>
                         <li><a> Welcome : ${pageContext.request.userPrincipal.name}</a></li>
                         <li> <a href="<c:url value="/logout" />" > Logout</a></li>

@@ -12,4 +12,10 @@ public interface ITrainService
         public void delete(Long trainId);
         public TrainEntity getTrain(Long trainId);
         public List<TrainEntity> getAllTrains();
+
+        public void addEntity(Integer numberTrain, String nameTrain, String arrivalStation, Integer countPlaces);
+
+        List<TrainEntity> getTrainByNumberAndArStation(Integer numberTrain, String arrivalStation);
+
+        List<TrainEntity> getTrainByName(String name);
 }

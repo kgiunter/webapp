@@ -8,11 +8,13 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface StationRepository extends JpaRepository<StationEntity, Long>
 {
     @Query("select s from StationEntity s where s.nameStation = :name")
-    StationEntity getStationByName(@Param("name") String name);
+    List<StationEntity> getStationByName(@Param("name") String name);
 
     @Modifying
     @Query(value = "insert into station (nameStation) values (?1)", nativeQuery = true)

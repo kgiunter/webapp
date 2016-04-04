@@ -23,7 +23,7 @@ public class ImplStationService implements IStationService{
     }
 
     @Transactional
-    public StationEntity getStationByName(String search)
+    public List<StationEntity> getStationByName(String search)
     {
         if (search.equals("")) return null;
         return stationRepository.getStationByName(search);

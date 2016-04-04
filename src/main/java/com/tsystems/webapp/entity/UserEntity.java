@@ -2,7 +2,7 @@ package com.tsystems.webapp.entity;
 
 
 import com.tsystems.webapp.entity.enums.UserRole;
-import org.springframework.format.annotation.DateTimeFormat;
+
 
 import javax.persistence.*;
 import java.util.Date;

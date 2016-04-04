@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="<c:url value="/station/list.html" />">Stations <span class="sr-only"></span></a></li>
-                        <li><a href="<c:url value="/trains" />">Trains</a></li>
+                        <li><a href="<c:url value="/train/list.html" />">Trains</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">

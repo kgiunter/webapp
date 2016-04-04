@@ -46,5 +46,21 @@ public class ImplTrainService implements ITrainService{
     {
         return trainRepository.findAll();
     }
-    
+
+    @Transactional
+    public void addEntity(Integer numberTrain, String nameTrain, String arrivalStation, Integer countPlaces)
+    {
+        trainRepository.addEntity(numberTrain, nameTrain, arrivalStation, countPlaces);
+    }
+
+    @Transactional
+    public List<TrainEntity> getTrainByNumberAndArStation(Integer numberTrain, String arrivalStation) {
+        return trainRepository.getTrainByNumberAndArStation(numberTrain,arrivalStation);
+    }
+
+    @Transactional
+    public List<TrainEntity> getTrainByName(String name)
+    {
+        return trainRepository.getTrainByName(name);
+    }
 }

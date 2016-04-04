@@ -1,7 +1,7 @@
 package com.tsystems.webapp.service.interfaces;
 
-/**
- * Created by Admin on 02.04.2016.
- */
+import org.springframework.stereotype.Service;
+
+@Service
 public interface IRouteService {
 }
